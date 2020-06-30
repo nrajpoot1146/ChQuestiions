@@ -1,0 +1,14 @@
+.label{
+	fx-background-color: Black;     
+    -fx-font-size: 20;  
+}
+.grid{
+	-fx-alignment:center;
+}
+
+#root{
+	-fx-alignment:center;  
+}
+#answer{
+	-fx-font-size: 11;
+}

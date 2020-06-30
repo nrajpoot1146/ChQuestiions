@@ -1,0 +1,36 @@
+import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+
+public class FileStats {
+    public static void main(String[] args) throws Exception {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Enter a filename");
+        
+        String file_name = input.nextLine();
+        int word_line_count = 0, line_count = 0;
+        
+        FileReader file_object = new FileReader(file_name);
+        BufferedReader buffer = new BufferedReader(file_object);
+        String sentence;
+        
+        while ((sentence = buffer.readLine()) != null) {
+            line_count++;
+        }
+        string
+        System.out.println(file_name + " has " + line_count + " lines");
+        
+        System.out.println("Enter some text");
+        String search_word = input.nextLine();
+        
+        while ((sentence = buffer.readLine()) != null) {
+            if(sentence.contains(search_word)){
+            	word_line_count++;
+            }
+        }
+        
+        System.out.println(word_line_count + " line(s) contain " + '\u0022' + search_word + '\u0022');
+        file_object.close();
+    }
+}
