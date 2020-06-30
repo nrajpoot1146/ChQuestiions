@@ -1,0 +1,10 @@
+.myPara{
+    background-color: cyan;
+    color: green;
+}
+
+#myPara{
+    background-color: blue;
+    color: white;
+    font-family: Arial;
+}

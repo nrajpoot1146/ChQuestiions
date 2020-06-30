@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            th, td, tr{
+                border: 1px solid black;
+                text-align: center;
+            }
+            td, th{
+                padding: 5px;
+            }
+            table{
+                border: 1px solid #bbb;
+            }
+            .brdr{
+                border: 1px solid #bbb;
+                width: max-content;
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id = "dim" class="brdr">
+            <h1> Days in a Month </h1>
+            <div id = 'table'>
+
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="brdr">
+            <input type="number" id = "day"> <button onclick="getMonth(this)">Get</button>
+        </div>
+
+        <div id = "list">
+            
+        </div>
+
+        <script>
+            var month = ["Jan", "Feb", "Mar", "Apr", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]; // array of month
+            var daysInMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31] // array of date
+            
+            var tbl = "<table>"; 
+            var r1 = "<tr>";
+            var r2 = "<tr>";
+            for (let i = 0; i<month.length; i++){
+                r1 += "<th>" + month[i].toUpperCase() + "</th>";
+                r2 += "<td>" + daysInMonth[i] + "</td>";
+            }
+            r1 += "</tr>";
+            r2 += "</tr>";
+            tbl += r1;
+            tbl += r2;
+            tbl += "</table>";
+            
+            document.getElementById("table").innerHTML = tbl; // add month table 
+
+            function getMonth(e){
+                var day = document.getElementById("day").value;
+                if(day < 0){
+                    return;
+                }
+                var list = "<ul>";
+                for (let i=0; i<month.length; i++){
+                    if(day <= daysInMonth[i]){
+                        list += "<li>"+ month[i].toUpperCase() +"</li>";
+                    }
+                }
+                list += "</ul>";
+
+                document.getElementById("list").innerHTML = list; // add month list
+            }
+        </script>
+    </body>
+</html>

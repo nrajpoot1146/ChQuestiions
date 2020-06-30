@@ -1,0 +1,5 @@
+Ramesh,Deposit,600,25
+Suresh,Withdraw,700,20
+Ram,Deposit,400,15
+Ramu,Withdraw,700,58
+

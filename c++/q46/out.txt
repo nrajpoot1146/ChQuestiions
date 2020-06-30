@@ -1,0 +1,12 @@
+
+Analyse file out.txt
+
+#Paragraphs = 2
+#lines = 7
+#Words = 192
+#Characters = 911
+Alpha = 882
+Numerical = 3
+Other = 26
+
+Error(analyze_file): Could not open file int.txt

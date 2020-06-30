@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>
+            Rgistration Form
+        </h1>
+        <h2 style="color: red;">
+            All fiels are REQUIRED
+        </h2>
+
+        <div>
+            <form>
+                <div class="form-item">
+                    <label>First Name:</label> <input type="text" name="fname" placeholder="First Name" required>
+                </div>
+                <br>
+                <div class="form-item">
+                    <lable>Last Name: </lable> <input type="text" name="lname" placeholder="Last Name" required>
+                </div>
+                <br>
+                <div class="form-item">
+                    <label>Gender: </label><br>
+                    <input type="radio" name="gender" value="male" required> Male<br>
+                    <input type="radio" name="gender" value="female" required> Female <br>
+                    <input type="radio" name="gender" value="other" required> Other
+                </div>
+                <br>
+                <div class="form-item">
+                    <label>Experience: </label>
+                    <select name="exp" style="width: 100px;" required>
+                        <option value=null>--select--</option>
+                        <option value="0">&lt;1</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">&gt;4</option>
+                    </select>
+                </div>
+                <br>
+                <div class="form-item">
+                    <label>Bio: </label><br>
+                    <textarea style="width: 200px; height: 100px;" required>
+
+                    </textarea>
+                </div>
+                <br>
+                <div class="form-item">
+                    <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

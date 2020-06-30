@@ -1,0 +1,59 @@
+body,html{
+    margin: 0;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.top{
+    background-color: #bbb;
+    height: 150px;
+}
+.menu{
+    background-color: yellow;
+    height: 50px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+.menu-item{
+    display: inline-block;
+    width: 33%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+.std-details{
+    border-bottom: 1px solid gray;
+    height: 150px;
+    padding: 20px 0px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    float: left;
+}
+.photo{
+    float: right;
+    height: 100%;
+}
+
+.question{
+    border-bottom: 1px solid gray;
+    margin-top: 10px;
+    padding-bottom: 30px;
+}
+.question-header{
+    font-size: 31px;
+}
+.question-content{
+
+}
+.question-option{
+
+}
+.question-option ul{
+    
+}

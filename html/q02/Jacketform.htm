@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>
+            JacketForm
+        </title>
+    </head>
+
+    <body>
+        <h1>
+            Company Spring Retreat Jacket Order Form
+        </h1>
+        <h5>
+            Please fill in this form and click on Save My Prefrences
+        </h5>
+        <form action="Jacketconfirmation.php" method="POST">
+            Please type your gender <br><br>
+            ("male" or "female")<input type="text" name="gender"><br><br>
+            Please type yoyr Prefrence of size<br><br>
+            "S""M""L""XL"<input type="text" name="size"><br><br>
+            Please type your Prefrence of color<br><br>
+            "Argent" or "Azure"<input type="text" name="color"><br><br>
+            <button onclick="window.location.reload(); return false;">Start Over on This Page</button>
+            <button type="submit">Save my Prefrences</button>
+        </form>
+    </body>
+</html>
