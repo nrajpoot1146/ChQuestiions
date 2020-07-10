@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+   <title>Tic Tac Toe</title>
+   <style>
+      td {
+         border: 1px solid gray;
+         padding: 9px;
+         font-size: 60pt;
+         font-family: Courier;
+         width: 100px;
+         height: 100px;
+         text-align: center;
+      }
+   </style>
+   <!-- cdn jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="ttt.js"></script>
+   <body>
+      <h1>Tic Tac Toe</h1>
+      <!-- 3x3 table for game interface -->
+      <table>
+         <tr>
+            <td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td></td><td></td><td></td>
+         </tr>
+         <tr>
+            <td></td><td></td><td></td>
+         </tr>
+      </table>
+
+      <span style="font-weight: bold;">Game Satus : </span>
+      <p id="info"></p>
+
+   </body>
+
+</html>
