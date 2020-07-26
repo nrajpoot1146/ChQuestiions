@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Flickr</title>
+    <link href="main.css" rel="stylesheet">
+    <link href="css/lightbox.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
+    <script type="text/javascript">
+
+        function jsonFlickrFeed(data) {
+            console.log(data);
+            var html = "";
+
+            $.each(data.items, function (i, item) {
+                // old : html += "<img src='" + item.media.m +"'>";
+                let link = item.media.m.substr(0, item.media.m.indexOf("_m.")) + ".jpg";
+                html += "<a href='"+ link  +"' data-lightbox='vectacorpbuilding'><img src='" + item.media.m + "'></a>";
+                // old: <!--html += "<p><b>Tags: </b>" + item.tags + "</p>";-->
+                // html += "<p><b>Tags: </b>" + item.tags + "</p>";
+           });
+            $("#new_building").html(html);
+        }
+
+
+
+        (function () {
+            var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?id=82407828@N07&tags=vectacorpbuilding&callback=?";
+            $.getJSON(flickerAPI, {
+                format: "json"
+            })
+                .done(function (data) {
+                    console.log(data);
+                });
+        })();
+
+
+    </script>
+</head>
+
+<body>
+    <header></header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>About Us</h2>
+        <p> On June 6th, 2012, Vecta Corp. moved into its new 4 story, 35,000 square foot facilty.
+            Below are a few pictures of the new facility. </p>
+        <div id="new_building"></div>
+        <!-- removed line -->
+        <!-- <a href= $.each(data) data-lightbox="vectacorpbuilding"><img src=$.each(html)></a>"  -->
+        </a>
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

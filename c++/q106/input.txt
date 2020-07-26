@@ -1,0 +1,5 @@
+using namespace std;
+
+vector<int> permute(vector<int>, vector<int>);
+
+string encrypt(vector<int>s1 , vector<int> t1, string p);
