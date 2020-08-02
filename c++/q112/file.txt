@@ -1,0 +1,4 @@
+Desperation: This program will have that reports how many lines, words, and characters in an input text file with more than 300 words,
+and at least 3 paragraphs, and also makes a sorted list of all words found in it. You are required to provide the text file.
+Write the sorted list to an output file, along with the number of times each word appeared in the input file.
+For the purpose of this program, a word consists of a consecutive sequence of any characters except white space characters
