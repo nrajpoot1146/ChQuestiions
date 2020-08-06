@@ -5,13 +5,15 @@
  * @param {*} str 
  */
 var f1 = function(str){
-    let alphaNumCounter = 0;
+    let alphaNumCounter = "";
+    let res = "";
     for( x of str){
         if (x >= 'a' && x <= 'z' || x >= 'A' && x <= 'Z' || x >= '0' && x<= '9'){
             alphaNumCounter++;
+            res += x;
         }
     }
-    return alphaNumCounter;
+    return alphaNumCounter +" (" +res+")";
 }
 
 /**
