@@ -1,0 +1,12 @@
+Carlos
+3
+Hello, Thu Jul 23 2020
+It is hot here, Fri Jul 24 2020
+I got a cold, Sat Jul 25 2020
+Jose
+5
+Homework again, Sun Jul 26 2020
+Ishould work on homework now, Mon Jul 27 2020
+I love linked list, Tue Jul 28 2020
+Exam again, Sat Aug 1 2020
+Life is good, Mon Aug 3 2020

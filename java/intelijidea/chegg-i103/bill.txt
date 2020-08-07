@@ -1,0 +1,9 @@
+
+******************** Bill ********************
+Food Item  Quantity  Price Per Item
+De Anza Burger 2 5.25
+Bacon Cheese  3 5.75
+
+Total(before tax) : 27.75
+Tax :                0.00
+Total(after tax) : 27.75

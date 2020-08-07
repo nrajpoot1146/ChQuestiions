@@ -14,7 +14,7 @@ public class Driver0 {
         System.out.print("Initially, the array is: ");
         s.displayArray(array, SIZE);
         System.out.println("BUILDING A HEAP");
-        heapSort(array);
+        heapify(array);
     }
 
     /**
@@ -25,8 +25,8 @@ public class Driver0 {
     public static void heapSort(int[] arr) {
         int size = arr.length;
         heapify(arr);
-        System.out.println("Program writtten by Your Name/012345678," +
-                "abot to sort the array!");
+        System.out.println("Program written by Your Name/012345678," +
+                "about to sort the array!");
         System.out.println("HEAP-SORT");
         while (size > 1) {
             System.out.print("heap-sort working on element with array index: "+(size-1));
@@ -50,8 +50,8 @@ public class Driver0 {
         int size = arr.length;
         for (int i = size / 2 - 1; i >= 0; i--) {
             System.out.print("max heap on element with array index: "+i);
-            s.displayArray(arr,arr.length);
             heapi(arr, i, size - 1);
+            s.displayArray(arr,arr.length);
         }
 
     }
