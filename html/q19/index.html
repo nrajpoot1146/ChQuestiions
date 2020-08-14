@@ -1,0 +1,70 @@
+<html>
+
+<head>
+
+    <!-- css stylesheet -->
+    <style>
+        .container {
+            border: 8px solid black;
+            background-color: aliceblue;
+            width: auto;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 10px 10px;
+        }
+        .item{
+            border: 2px solid black;
+            display: inline-block;
+            padding: 10px;
+            margin: 10px 10px;
+            text-align: left;
+        }
+        ul {
+            margin: 0;
+            padding: 20px;
+        }
+    </style>
+
+    <script>
+        window.onload = function () {
+
+            var container = document.getElementsByClassName("container")[0];
+            //  data given in question
+            var data = "{ \"students\" : [ \
+                        { \"Reg\" : 101 , \"Name\" : \"Ali\", \"Age\" : 25 },\
+                        { \"Reg\" : 202 , \"Name\" : \"Zia\", \"Age\" : 40 },\
+                        { \"Reg\" : 303 , \"Name\" : \"Umar\", \"Age\" : 41 },\
+                        { \"Reg\" : 404 , \"Name\" : \"Umar\", \"Age\" : 40 },\
+                        { \"Reg\" : 505 , \"Name\" : \"Zain\", \"Age\" : 43 }\
+                    ]}";
+            var jsonData = JSON.parse(data); // parse json data to json object
+            var studentData = jsonData["students"]; // get student data
+
+            // add data into container block
+            for (x of studentData) {
+                var res = "<div class = \"item\"> \
+                            <ul>\
+                                <li> Reg No : " + x.Reg + " </li>\
+                                <li> Name : " + x.Name + " </li>\
+                                <li> Age : " + x.Age + " </li>\
+                            </ul>\
+                        </div>";
+
+                container.innerHTML += res;
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <!-- Container block to show data -->
+    <div class="container">
+
+    </div>
+</body>
+
+</html>
