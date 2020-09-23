@@ -1,0 +1,31 @@
+<!-- html document with html form of poll question -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Poll Question
+        </title>
+    </head>
+    <body>
+        <form action="/form" method="POST">
+            <h1>
+                Poll Question
+            </h1>
+            <div>
+                Would you like to have a Python refresher session?
+            </div>
+            <br>
+            <div>
+                <input type="radio" name="q1" value="Yes" required> Yes
+            </div>
+            <div>
+                <input type="radio" name="q1" value="No" required> No
+            </div>
+            <div>
+                <input type="radio" name="q1" value="Not sure" required> Not sure
+            </div>
+            <br>
+            <input type="submit" value="send your answer">
+        </form>
+    </body>
+</html>

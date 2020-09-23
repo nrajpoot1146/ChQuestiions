@@ -1,0 +1,15 @@
+<!-- This XML document includes some common services -->
+<business>
+    <service category='gov' state="QLD">
+    </service>
+        <ID>1</ID>
+        <name>eVoting Booth</name>
+        <Contact>Jack</Contact>
+        <City><Postcode>4000</Postcode></City>
+    <service category='gov' state="QLD">
+        <ID>2</ID>
+        <name>eVoting Booth</name>
+        <Contact>John</Contact>
+        <City><Postcode>4556</Postcode></City>
+    </service>
+</business>
